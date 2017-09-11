@@ -68,6 +68,10 @@ public class ImageViewer implements OnDismissListener, DialogInterface.OnKeyList
         return viewer.getUrl();
     }
 
+    public AlertDialog getDialog(){
+    	return dialog;
+    }
+
     private void createDialog() {
         viewer = new ImageViewerView(builder.context);
         viewer.setCustomImageRequestBuilder(builder.customImageRequestBuilder);
